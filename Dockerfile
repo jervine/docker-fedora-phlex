@@ -5,7 +5,7 @@ MAINTAINER “Jon Ervine” <jon.ervine@gmail.com>
 ENV container docker
 
 RUN dnf update -y
-RUN dnf install -y php git supervisor php-xmlrpc php-xml
+RUN dnf install -y php git supervisor php-xmlrpc php-xml php-mbstring
 #RUN dnf clean all
 
 RUN cd /var/www/html; git clone https://github.com/d8ahazard/Phlex
