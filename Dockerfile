@@ -6,7 +6,7 @@ ENV container docker
 
 RUN dnf update -y
 RUN dnf install -y php git supervisor
-RUN dnf clean all
+#RUN dnf clean all
 
 RUN cd /var/www/html; git clone https://github.com/d8ahazard/Phlex
 
